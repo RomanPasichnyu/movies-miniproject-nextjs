@@ -5,6 +5,8 @@ export interface IDetails {
 	budget: number;
 	genres: IGenre[];
 	homepage: string;
+	backdrop_path:string;
+	poster_path:string;
 	id: number;
 	imdb_id: string;
 	origin_country: string[];
