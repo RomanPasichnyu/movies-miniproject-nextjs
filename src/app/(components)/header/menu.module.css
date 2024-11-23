@@ -1,0 +1,33 @@
+.menu {
+    display: flex; /* Розташовує елементи в один рядок */
+    align-items: center; /* Вирівнює по вертикалі */
+    list-style: none; /* Видаляє крапки у списку */
+    gap: 20px; /* Відстань між елементами */
+    margin: 20px 0 ; /* Видаляє зовнішні відступи */
+    padding: 0; /* Видаляє внутрішні відступи */
+}
+
+.menu li {
+    font-size: 30px; /* Розмір тексту */
+}
+
+.menu button {
+    background: none; /* Видаляє фоновий колір */
+    border: none; /* Видаляє рамку */
+    font-size: 18px; /* Розмір тексту */
+    cursor: pointer; /* Змінює курсор на "вказівник" */
+    color: blue; /* Колір тексту кнопки */
+}
+
+.menu button:hover {
+    text-decoration: underline; /* Підкреслення при наведенні */
+}
+
+.menu a {
+    text-decoration: none; /* Видаляє підкреслення у посиланнях */
+    color: black; /* Колір тексту */
+}
+
+.menu a:hover {
+    color: blue; /* Зміна кольору тексту при наведенні */
+}

@@ -1,0 +1,10 @@
+body {
+    display: flex;
+    justify-content: center; /* Горизонтальне вирівнювання */
+    align-items: center; /* Вертикальне вирівнювання */
+    flex-direction: column; /* Елементи розташовані у стовпчик */
+    background: whitesmoke; /* Фон сторінки */
+    margin: 0; /* Видалення зовнішніх відступів */
+    padding: 0; /* Видалення внутрішніх відступів */
+    width: 100%; /* Ширина сторінки */
+}

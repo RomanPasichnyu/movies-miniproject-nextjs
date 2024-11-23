@@ -1,22 +1,12 @@
 import React from 'react';
-import {getAllGenres} from "@/services/api.service";
-import {IGenre, IGenreResponre} from "@/models/GenreModel";
-import Link from "next/link";
+import GenresComponent from "@/app/(components)/genres/GenresComponent";
 
-const GenresPage = async () => {
-
-    const {genres}: IGenreResponre = getAllGenres
-    console.log(genres)
+const Page = () => {
     return (
         <div>
-            {genres.map((genre:IGenre)=>(
-                <div key={genre.id}>
-            <Link key={genre.id} href={`/genres/${genre.id}`}>
-                <div> {genre.id} - {genre.name}</div>
-            </Link>
-                </div>))}
+            <GenresComponent/>
         </div>
     );
 };
 
-export default GenresPage;
+export default Page;

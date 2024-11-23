@@ -1,0 +1,50 @@
+.movieCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: azure;
+    width: 17%;
+    padding: 10px;
+    margin: 10px;
+}
+
+.movieCard:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.movieCard img {
+    width: 100%; /* Зображення займе всю ширину доступного контейнера */
+    height: auto; /* Зберігає співвідношення сторін */
+    /* Обмеження максимальної ширини, якщо потрібно */
+    object-fit: cover; /* Гарантує гарний вигляд, навіть якщо співвідношення сторін зображення не ідеальне */
+    border-radius: 8px; /* Опціонально, додає закруглення */
+}
+
+.movieCardContent {
+    padding: 1rem;
+    text-align: center;
+}
+
+.movieCardTitle {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin: 0.5rem 0;
+    color: #333;
+}
+
+.movieCardDate {
+    font-size: 0.875rem;
+    color: #777;
+}
+
+.movieCardRating {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ff9900;
+}
