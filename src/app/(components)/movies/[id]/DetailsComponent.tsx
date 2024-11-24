@@ -20,9 +20,6 @@ const DetailsComponent: FC<IProps> = ({details}) => {
                     <p className={css.overview}>{overview}</p>
                     <p className={css.runtime}>Runtime: {runtime} mins</p>
                     <p className={css.rating}>Rating: {vote_average}/10</p>
-                    <p className={css.genres}>
-                        Genres: {genres.map((genre) => genre.name).join(', ')}
-                    </p>
                 </div>
 
                 <div className={css.genreBadgesContainer}>
