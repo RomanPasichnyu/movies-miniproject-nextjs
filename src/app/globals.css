@@ -8,3 +8,6 @@ body {
     padding: 0; /* Видалення внутрішніх відступів */
     width: 100%; /* Ширина сторінки */
 }
+body a{
+    text-decoration: none;
+}

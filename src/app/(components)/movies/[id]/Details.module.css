@@ -1,0 +1,70 @@
+.detailsContainer {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Повна висота екрану */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Текст білий для контрасту */
+    padding: 20px;
+    overflow: hidden;
+}
+
+/* Напівпрозорий фон для тексту */
+.detailsContent {
+    background: rgba(0, 0, 0, 0.6); /* Чорний фон з прозорістю */
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    max-width: 80%;
+    align-items: center;
+    position: relative; /* Додаємо для можливості абсолютного позиціонування в середині */
+}
+
+.poster {
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+.textContent {
+    flex: 1;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.overview {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.runtime, .rating, .genres {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.genreBadgesContainer {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    z-index: 10; /* щоб беджі були поверх контенту */
+}
+
+.genreBadge {
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    background: blue;
+    border-radius: 20px;
+    color: white;
+}

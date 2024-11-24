@@ -1,0 +1,51 @@
+.genresContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.65);
+    border-radius: 15px;
+    margin: 90px auto 0 auto;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+    width: 50%;
+}
+
+.genreCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+.genreCard:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+    background: rgb(36, 69, 175);
+    text-decoration: none;
+}
+
+.genreName {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+    text-decoration: none;
+}
+.genresContainer a {
+    text-decoration: none;
+}
+
+.genreCard a {
+    text-decoration: none;
+}

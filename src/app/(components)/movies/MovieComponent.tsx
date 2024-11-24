@@ -2,29 +2,14 @@ import React, {FC} from 'react';
 import {IMovie} from "@/models/MovieModel";
 import Link from "next/link";
 import css from './Movie.module.css'
-
+import StarRatings from 'react-star-ratings';
 
 type IProps = {
     movie: IMovie
 }
 
 const MovieComponent: FC<IProps> = ({movie}) => {
-    const {
-        adult,
-        backdrop_path,
-        genre_ids,
-        id,
-        original_language,
-        original_title,
-        overview,
-        popularity,
-        poster_path,
-        release_date,
-        title,
-        video,
-        vote_average,
-        vote_count
-    } = movie
+    const {id, poster_path, release_date, title, vote_average} = movie
 
     return (
         <div className={css.movieCard}>
@@ -37,7 +22,14 @@ const MovieComponent: FC<IProps> = ({movie}) => {
                 <div className={css.movieCardContent}>
                     <h2 className={css.movieCardTitle}>{title}</h2>
                     <p className={css.movieCardDate}>{release_date}</p>
-                    <p className={css.movieCardRating}>⭐ {vote_average}</p>
+                    <StarRatings
+                        rating={vote_average}
+                        starRatedColor="gold"
+                        numberOfStars={10}
+                        name='rating'
+                        starDimension="30px"
+                        starSpacing="2px"
+                    />
                 </div>
 
             </Link>

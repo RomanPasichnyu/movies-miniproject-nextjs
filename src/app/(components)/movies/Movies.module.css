@@ -1,9 +1,13 @@
 .moviesContainer {
     display: flex;
-    flex-wrap: wrap; /* Автоматичний перенос елементів на новий рядок */
-    justify-content: space-around; /* Простір між карточками */
+    flex-wrap: wrap;
+    justify-content: space-around;
     padding: 5px;
     width: 1500px;
+    margin-top: 80px;
+}
+.moviesContainer a{
+    text-decoration: none;
 }
 .pagination {
     display: flex;
@@ -18,7 +22,7 @@
     padding:  0 10px;
     font-size: 10px;
     cursor: pointer;
-    background-color: blue; /* Зелене тло */
+    background-color: white;
     color: white;
     border: none;
     border-radius: 5px;
@@ -27,15 +31,15 @@
 }
 
 .pagination button:disabled {
-    background-color: #ccc; /* Сірий колір для відключених кнопок */
+    background-color: #ccc;
 }
 
 .pagination button:hover:not(:disabled) {
-    background-color: white; /* Трохи темніше при наведенні */
+    background-color: white;
     border: blue 1px solid;
     transition: 0.5s;
     color: black;
-    transform: translateY(-2px); /* Легкий підйом при наведенні */
+    transform: translateY(-2px);
 }
 
 .pagination span {

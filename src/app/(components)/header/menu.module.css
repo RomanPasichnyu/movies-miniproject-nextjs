@@ -1,33 +1,47 @@
 .menu {
-    display: flex; /* Розташовує елементи в один рядок */
-    align-items: center; /* Вирівнює по вертикалі */
-    list-style: none; /* Видаляє крапки у списку */
-    gap: 20px; /* Відстань між елементами */
-    margin: 20px 0 ; /* Видаляє зовнішні відступи */
-    padding: 0; /* Видаляє внутрішні відступи */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 30px;
+    margin: 0;
+    padding: 10px 20px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
 }
 
 .menu li {
-    font-size: 30px; /* Розмір тексту */
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
 }
 
 .menu button {
-    background: none; /* Видаляє фоновий колір */
-    border: none; /* Видаляє рамку */
-    font-size: 18px; /* Розмір тексту */
-    cursor: pointer; /* Змінює курсор на "вказівник" */
-    color: blue; /* Колір тексту кнопки */
+    background: none;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    color: white;
+    transition: color 0.3s ease;
 }
 
 .menu button:hover {
-    text-decoration: underline; /* Підкреслення при наведенні */
+    color: blue;
+    text-decoration: none;
 }
 
 .menu a {
-    text-decoration: none; /* Видаляє підкреслення у посиланнях */
-    color: black; /* Колір тексту */
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
 }
 
 .menu a:hover {
-    color: blue; /* Зміна кольору тексту при наведенні */
+    color: blue;
 }
